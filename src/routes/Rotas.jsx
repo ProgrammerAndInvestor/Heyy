@@ -11,21 +11,21 @@ function Rotas() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route exact path="/" element={<LandingPage />} />
-                <Route exact path="/login" element={<LoginPage />} />
-                <Route exact path="/signUp" element={<SignupPage />} />
-                <Route exact path="/tasks" element={<TasksPage />} />
-                <Route exact path="/tasks/:id/delete" element={<>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/signUp" element={<SignupPage />} />
+                <Route path="/tasks" element={<TasksPage />} />
+                <Route path="/tasks/:id/delete" element={<>
                     <TasksPage />
                     <DeleteTask />
                 </>}
                 />
-                <Route exact path="/tasks/:id/update" element={<>
+                <Route path="/tasks/:id/update" element={<>
                     <TasksPage />
                     <UpdateTask />
                 </>}
                 />
-                <Route exact path="*" element={<ErrorPage />} />
+                <Route path="*" element={<ErrorPage />} />
 
             </Routes>
         </BrowserRouter>
