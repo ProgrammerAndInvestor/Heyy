@@ -13,7 +13,7 @@ function Rotas() {
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/login" element={<LoginPage />} />
-                <Route path="/signUp" element={<SignupPage />} />
+                <Route path="/signup" element={<SignupPage />} />
                 <Route path="/tasks" element={<TasksPage />} />
                 <Route path="/tasks/:id/delete" element={<>
                     <TasksPage />
